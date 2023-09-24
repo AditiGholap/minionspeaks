@@ -21,7 +21,7 @@ function buttonClickHandler(event) {
         .then(json => {
             translateOutput.innerText = json.contents.translated;
         })
-        // .catch(() => alert("some error occured"))
+        .catch(() => alert("some error occured"))
 }
 
 function constructURL(inputText) {
